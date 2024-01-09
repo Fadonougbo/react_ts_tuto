@@ -20,14 +20,11 @@ export const Data=({cardName}:CardPropsType)=> {
     const removeData=useStore((state)=>state.removeData)
     const findDeletedData=useStore((state)=>state.findDeletedData)
     const swapDataCard=useStore((state)=>state.swapDataCard)
-    const test=useStore((state)=>state.test)
 
     const [state,setState]=useState<dataType[]>([])
-/*     const y=['doe',111,'gaut']
-    const r=y.findIndex((el)=>el==='gaut')
-    console.log(r); */  
+
     //const currentCardList=dataList?.filter((data)=>data.cardName===cardName);
-    const lists=state?.map((data)=><Content currentData={data} key={data.id} s={state} />)
+    const lists=state?.map((data)=><Content currentData={data} key={data.id} />)
     
     useEffect(()=> {
       setState(()=>dataList)

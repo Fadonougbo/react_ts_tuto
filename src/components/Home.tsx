@@ -2,7 +2,7 @@ import { Card } from "./Card"
 
 export const Home=()=>{
 
-    const cardName=[{name:'á faire',cardName:'cardA'},{name:'déja fait',cardName:'cardB'}]
+    const cardName=[{name:'list 1',cardName:'cardA'},{name:'list 2',cardName:'cardB'}]
 
     const cards=cardName.map((data,key)=> {
         return <Card {...data}  key={key} />

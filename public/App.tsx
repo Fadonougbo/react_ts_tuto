@@ -1,6 +1,6 @@
 import { createRoot } from "react-dom/client"
-import { Home } from "./Home"
-import { Modale } from "./Modale"
+import { Home } from "../src/components/Home"
+import { Modale } from "../src/components/Modale"
 
 const App=()=>{
     return (

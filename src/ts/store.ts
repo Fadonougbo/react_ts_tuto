@@ -40,7 +40,7 @@ type ActionType={
 }
 
 
-export const useStore=create<StateType&ActionType>()(devtools( (set,get)=>(
+export const useStore=create<StateType&ActionType>()(devtools( persist( (set,get)=>(
 
     {
         modaleStatus:false,
@@ -131,6 +131,6 @@ export const useStore=create<StateType&ActionType>()(devtools( (set,get)=>(
 
     }
 
-)))
+),{name:"list"})))
 
 //useStore.subscribe((state)=>console.log(state))

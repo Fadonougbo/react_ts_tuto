@@ -6,7 +6,7 @@ astro js
 ******************************
 ->continu avec le drag and drop
 ajoute un persite zustande
-
+  
 continu avec la modification du store lorsqu'on effectur une modification
 ********************************
 
