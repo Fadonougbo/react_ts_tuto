@@ -1,0 +1,76 @@
+
+
+#container {
+    position: relative;
+    overflow:hidden;
+    width: 100%;
+    height:100vh;
+    background: rgba(0, 0, 0, 0.836);
+    
+
+    #tasks_form {
+        position: absolute;
+        inset: 50% auto auto 50% ;
+        transform: translate(-50%,-50%);
+        width: 45%;
+        height: 18%;
+        display: none;
+
+        &.show {
+            display: block;
+        }
+
+        section {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--primary_color);
+            border-radius: 0.6rem;
+            position: relative;
+           
+        }
+    }
+
+    #tasks_form :is(input,#submitBtn) {
+        flex: 1 0 auto;
+    }
+
+    #tasks_form input { 
+        height: 3rem;
+        margin: 0 0.6rem;
+    }
+
+    #tasks_form button {
+        background-color: #74a5c1;
+        color:#fff;
+        border: none;
+        font-size: 1.5rem;
+        margin: 0 0.6rem;
+        cursor: pointer;
+    }
+
+    #tasks_form #submitBtn {
+        height: 3rem;
+        border-radius: 0.3rem;
+    }
+
+    #tasks_form #closeBtn {
+        width: 1.9rem;
+        height: 1.9rem;
+        text-align: center;
+        line-height: 1.9rem;
+        border-radius: 50%;
+        position: absolute;
+        inset:0.5rem 0.3rem auto auto;
+    }
+
+    #tasks_form #message {
+        color:  #fff;
+        text-align: center;
+        font-size: 2rem;
+        margin: 1rem 0;
+        color: tomato;
+    }
+}

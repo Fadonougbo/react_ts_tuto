@@ -1,0 +1,16 @@
+exercice du tuto zustand
+tuto react query
+react error boundary
+astro js
+
+******************************
+->continu avec le drag and drop
+ajoute un persite zustande
+
+continu avec la modification du store lorsqu'on effectur une modification
+********************************
+
+const {dataList}=useStore((state)=>state);
+
+const dataList=useStore((state)=>state.dataList);
+recherche la difference entre ces deux syntaxes
