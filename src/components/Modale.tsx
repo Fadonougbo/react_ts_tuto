@@ -62,7 +62,7 @@ export const Modale=()=> {
                         <button className="btn" id="submitBtn" >ok</button>
                         <button className="btn" id="closeBtn" onClick={close} >X</button>
                     </section> 
-                    {errorMessage?<p id="message" ><em>Ce champ ne peux pas etre vide</em></p>:''}
+                    {errorMessage?<p id="message" ><em>This field cannot be empty</em></p>:''}
             </form>
             )
     
